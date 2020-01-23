@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projekt EDI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="page-top">
+<!--navbar-->
+<nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">projekt edi</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                                                                                                             value="Menu"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#airVisual">Air Visual</a></li>
+                <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#nbp">Kursy walut</a></li>
+                <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#wykresy">WYKRESY</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--top-->
+<header class="masthead" style="background-image:url('assets/img/backgrounds/main1.jpg');">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="card-deck" style="color: black;">
+                    <div class="col-sm-6 col-lg-4 offset-lg-2 offset-xl-2">
+                        <div class="card">
+                            <img src="assets/img/aqi.png" alt="" class="card-img-top" style="height:180px">
+                            <div class="card-body p-0">
+                                <h6 class="text-capitalize card-title">Jakość powietrza</h6>
+                                <p class="text-center card-text">Sprawdź jakość powietrza, oraz inne dane pogowe dla wybranego miasta w Polsce</p>
+                                <a href="#airVisual" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/img/nbp.jpg" alt="" class="card-img-top" style="height:180px">
+                            <div class="card-body p-0">
+                                <h6 class="text-capitalize card-title">Kursy walut</h6>
+                                <p class="text-center card-text">Tabele kursów walut w odniesieniu do polskiego złotego. Możliwość wyboru daty publikacji</p>
+                                <a href="#nbp" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <a class="btn btn-link btn-circle" role="button" href="#airVisual"><i class="fa fa-angle-double-down animated"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--airVisual-->
+<section id="airVisual" class="content-section text-center h-100" style="background-image: url(assets/img/backgrounds/weather-section.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 col-sm-12 col-xs-12">
+                            <!-- kontener na widget i obsługe api pogodowego-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--sekcja api nbp-->
+<section id="nbp" class="text-center">
+    <div class="container">
+        <div class="col-lg-10 mx-auto">
+            <div class="container">
+                <div class="block-heading" style="padding-top: 0px;">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="width: 200px;">Wybierz akcję</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id = 'table-container'>
+<!--                kotener na tabelę z kursami-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container text-center">
+        <p>Copyright ©Brand 2020</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</body>
+
+</html>
