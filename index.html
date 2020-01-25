@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/airVisual.js" defer></script>
+    <script src="assets/js/nbp.js" defer></script>
 </head>
 
 <body id="page-top">
@@ -68,7 +70,75 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 col-sm-12 col-xs-12">
                             <!-- kontener na widget i obsługe api pogodowego-->
+                            <div class="form-group d-flex flex-column">
+                                    <label class="p-2 font-weight-bold text-center">Wybierz województwo</label>
+                                    <select data-bs-hover-animate="pulse" id="voivodeship" class="col-md-6 offset-md-3">
+                                        <option value="" selected="" disabled="">Lista województw</option>
+                                    </select>
+                                </div>
+                                <div style="display: none;">
+                                    <div class="form-group d-flex flex-column" id="city-form-group">
+                                        <label class="p-2 font-weight-bold text-center">Wybierz miasto</label>
+                                        <select data-bs-hover-animate="pulse" id="city" class="col-md-6 offset-md-3">
+                                            <option value="" selected="" disabled="">Lista miast</option>
+                                        </select>
+                                    </div>
+                                </div>
                         </div>
+                    </div>
+                    <div class="col-lg-10 mx-auto" id="widget-container">
+                            <div class="card">
+                                <div class="card-header text-white" style="background-color: rgb(77, 52, 243);">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h2 class="text-center" id="temperature"><br></h2>
+                                        </div>
+                                        <div class="col-8" style="padding-top: 0px;">
+                                            <div class="float-right">
+                                                <h3 class="text-right" id="widget-city"></h3>
+                                                <p class="text-right" id="widget-voivodeship" style="font-size: 14px;"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4" id="weather-icon"></div>
+                                        <div class="col-8">
+                                            <h3 class= "text-right" id= "widget-time"></h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col" style="margin: 0;">
+                                            <div class="col-4 border rounded border-secondary float-left" id="widget-air-quality" style="background-color: #ffffff;">
+                                                <h1 class="text-left text-center" id="widget-aqi"></h1>
+                                                <h1 class="text-left text-center">AQI</h1>
+                                                <p id="widget-quality" class="text-center"></p>
+                                            </div>
+                                            <div class="text-left float-right">
+                                                <h2 class="text-right" id="widget-day"></h2>
+                                                <p class="text-right" id="widget-date" style="font-size: 16px;"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-dark" style="padding: 0;">
+                                    <div class="row">
+                                        <div class="col text-center" style="padding-right: 0px;padding-left: 0px;">
+                                            <h6 style="margin-bottom: 0;">Humidity<br><br></h6>
+                                            <div></div>
+                                            <h1 id="widget-humidity" style="margin-bottom: 0;"></h1>
+                                            <header></header>
+                                            <h1 style="margin-bottom: 0;">%</h1>
+                                        </div>
+                                        <div class="col text-center">
+                                            <h6 style="margin-bottom: 0;">Atmospheric<br>pressure</h6>
+                                            <div></div>
+                                            <h1 id="widget-pressure"></h1>
+                                            <header></header>
+                                            <h1>hPa</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
