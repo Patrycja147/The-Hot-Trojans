@@ -1,13 +1,13 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  let height = parseInt($('#mainNav').css('height'));
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - parseInt($('#mainNav').css('height')))
+          scrollTop: (target.offset().top - height)
         }, 1000, "easeInOutExpo");
         return false;
       }
