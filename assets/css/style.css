@@ -16,7 +16,7 @@
 }
 
 #widget-container h2, p{
- margin-bottom: 0!important;
+    margin-bottom: 0!important;
 }
 
 #currency-select-container {
@@ -44,4 +44,11 @@
 }
 #nbp .dropdown {
     padding-top: 1rem;
+}
+#wykresy {
+    height: calc(100vh - 150px);
+    max-height: calc(100vh - 100px);
+}
+#selectState {
+    display: none;
 }
