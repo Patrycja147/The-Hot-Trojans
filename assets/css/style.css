@@ -1,0 +1,47 @@
+@media (min-width: 845px) {
+    .intro-body .container {
+        margin-top: 200px;
+    }
+}
+#mainNav {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+.intro-body .card .card-body {
+    height: 150px;
+}
+#widget-container {
+    padding: 0;
+    display: none;
+}
+
+#widget-container h2, p{
+ margin-bottom: 0!important;
+}
+
+#currency-select-container {
+    margin-top: 2rem;
+    display: none;
+}
+#table-container {
+    display: none;
+}
+#table-date {
+    margin: 0;
+}
+
+#change-date {
+    padding: 5px 5px;
+    margin: 4px 5px 8px;
+}
+
+#weather-icon {
+    width: 95px;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+#nbp .dropdown {
+    padding-top: 1rem;
+}
